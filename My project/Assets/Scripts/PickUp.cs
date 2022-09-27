@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PickUp : MonoBehaviour
 {
+    [SerializeField] private Slider slider;
+    [SerializeField] private float speed;
     public int woodCount;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -13,7 +16,12 @@ public class PickUp : MonoBehaviour
             woodCount += 1;
             var wood = collision.gameObject;
             Destroy(wood);
-            print(woodCount);
+            slider.value += 0.3f;
         }
+    }
+
+    private void Update()
+    {
+        slider.value -= Time.deltaTime * speed;
     }
 }
