@@ -201,7 +201,6 @@ GameObject:
   m_Component:
   - component: {fileID: 338764568}
   - component: {fileID: 338764569}
-  - component: {fileID: 338764570}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -283,18 +282,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &338764570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338764567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18bd33120a5ff0f4d89951609884fe54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &355444634
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,8 +621,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616102369}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.13, y: 8.25, z: 0}
-  m_LocalScale: {x: 1.4655601, y: 1.672693, z: 1}
+  m_LocalPosition: {x: 5.82, y: -2.11, z: 0}
+  m_LocalScale: {x: 0.26233527, y: 0.4173369, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -931,6 +918,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360402c30829a004cab55ae74c51aec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slider: {fileID: 338764569}
+  speed: 0.05
   woodCount: 0
 --- !u!1 &1460071003
 GameObject:
@@ -1066,12 +1055,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3cef2a7976e54f4418da063b2cc96252, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 283fe8ae55c1c4645a11cda50e842502, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8, y: 8}
+  m_Size: {x: 5, y: 5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1085,7 +1074,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708946661}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.7, y: -19.5, z: 0}
+  m_LocalPosition: {x: 4.92, y: -13.11, z: 0}
   m_LocalScale: {x: 6.4244695, y: 6.0909142, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
