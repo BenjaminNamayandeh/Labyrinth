@@ -9,6 +9,8 @@ public class PickUp : MonoBehaviour
     [SerializeField] private float speed;
     public int woodCount;
 
+    public float SliderValue => slider.value;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Wood")
