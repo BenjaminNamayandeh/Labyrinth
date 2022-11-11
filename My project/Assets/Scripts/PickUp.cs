@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PickUp : MonoBehaviour
 {
@@ -19,6 +20,11 @@ public class PickUp : MonoBehaviour
             var wood = collision.gameObject;
             Destroy(wood);
             slider.value += 0.3f;
+        }
+
+        if (collision.tag == "Door")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
