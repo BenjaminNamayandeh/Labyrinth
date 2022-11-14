@@ -18,11 +18,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moveDirection = transform.position + (new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * speed);
+        moveDirection = (transform.up * Input.GetAxisRaw("Vertical") + transform.right * Input.GetAxisRaw("Horizontal")).normalized;
     }
 
     private void FixedUpdate()
     {
-        rb.MovePosition(moveDirection);
+        rb.AddForce(moveDirection * speed);
     }
 }
