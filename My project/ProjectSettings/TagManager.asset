@@ -7,6 +7,8 @@ TagManager:
   - Wood
   - wall
   - Door
+  - Attack
+  - Enemy
   layers:
   - Default
   - TransparentFX
