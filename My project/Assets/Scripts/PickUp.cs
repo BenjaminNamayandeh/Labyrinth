@@ -11,7 +11,7 @@ public class PickUp : MonoBehaviour // This class enables the player to pick up 
     public int woodCount;
 
     public float SliderValue => slider.value;
-
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Wood") // If player hits wood, add wood count and increase wood bar value
