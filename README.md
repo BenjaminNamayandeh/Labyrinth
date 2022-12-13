@@ -1,11 +1,18 @@
 # Labyrinth
-You are traversing a maze with multiple levels. Your vision is limited by the light emitted by your torch. Monsters are romaing around looking for your blood. They sense you. They feel you. Try to escape.
-## Story
-The player has dreams, and in these dreams they are forced to go through a maze while being chased by monsters. After the player finishes the level, they are free until the next time they go to sleep. After the final dream the player finds a crystal that they break, setting them free from the dreams forever.
-### Level 1 - Corn Maze (Dream 1)
-You have no concept of time. You are thrown into a large corn maze with a Ghoul chasing you.
-### Level 2 - Crystal Cave (Dream 2)
-You are now thrown into a crystal cave maze with Demon Monkeys chasing you. You have no option but ot find a way out. You still don't know why this is happening.
-### Level 3 - Junkyard (Dream 3)
-You are gasping for air and are extremeley fatigued. You magically appear in a junkyard. Now, there is a giant made up of iron chasing you. 
-  
+
+---
+## Overview
+
+Labyrinth is a 2D puzzle game designed entirely using the Unity Game Engine. This game is a result of an assignment done by 3 people in a Computer Science course.
+The game works best when all other programs are closed.
+
+## Help
+
+How to play: [Play](https://docs.google.com/document/d/1Vo02CyjmSLTCqO1aAETeL4UarypSVxjWaTN-y46AD0I/edit?usp=sharing)
+
+Installation Instructions: [Install](https://docs.google.com/document/d/1WXu0tbZCWnXh5iZQT2Qn5O6cFmE5pbESzNqUPxYaJVk/edit?usp=sharing)
+
+Working Demonstration: [Demo Video]
+
+## Art
+All art content in this game (levels/maps, characters, animations, etc.) was done by the Visual Arts students of John Fraser which means you cannot use it in your own projects unless permission is provided.
