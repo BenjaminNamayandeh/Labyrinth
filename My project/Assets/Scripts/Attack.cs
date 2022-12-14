@@ -14,10 +14,10 @@ public class Attack : MonoBehaviour
         {
             attacks++;
             print(attacks);
-            if (collision.tag == "Enemy" && attacks < 3)
+            if (collision.tag == "Enemy" && attacks <= 4)
             {
                 var enemy = collision.gameObject;
-                Destroy(enemy);
+                enemy.transform.position = new Vector3(11.65f, 17.68f);
             }
         }
     }
