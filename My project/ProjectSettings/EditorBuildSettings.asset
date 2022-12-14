@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Story Scene 1.unity
     guid: d16512f67a09921429e66cabcc4ac53b
+  - enabled: 1
+    path: Assets/Levels/Menus/Main Menu.unity
+    guid: eeb04e9695d2c48e9b2d71ac1efbffd6
+  - enabled: 1
+    path: Assets/Levels/Menus/Pause Menu.unity
+    guid: 90d975d434a2e425a83d46fbfb71e5c1
   m_configObjects: {}

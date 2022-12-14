@@ -1,17 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
+using System;
 
 public class PickUp : MonoBehaviour // This class enables the player to pick up wood in the maze
 {
     [SerializeField] private Slider slider;
+    [SerializeField] private Timer timer;
+    [SerializeField] private TMP_Text bestScoreText;
     [SerializeField] private float speed;
+    [SerializeField] private string highScoreSaveKey;
     public int woodCount;
 
     public float SliderValue => slider.value;
-    
+
+    private void Start()
+    {
+        var highscore = Math.Round(PlayerPrefs.GetFloat(highScoreSaveKey), 2).ToString();
+        bestScoreText.text = $"PB: {highscore}";
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Wood") // If player hits wood, add wood count and increase wood bar value
@@ -24,6 +33,13 @@ public class PickUp : MonoBehaviour // This class enables the player to pick up 
 
         if (collision.tag == "Door") // If door reached, the round ends
         {
+            var bestTime = PlayerPrefs.GetFloat(highScoreSaveKey);
+            var currentTime = timer.currentTime;
+            if (currentTime <= bestTime || bestTime == 0f)
+            {
+                bestTime = currentTime;
+                PlayerPrefs.SetFloat(highScoreSaveKey, bestTime);
+            }
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
