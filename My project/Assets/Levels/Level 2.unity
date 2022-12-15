@@ -415,7 +415,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &103647583
 GameObject:
@@ -1943,7 +1943,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &652011978
 GameObject:
@@ -2084,7 +2084,7 @@ Transform:
   m_Children:
   - {fileID: 832480325}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &685744774
 GameObject:
@@ -2116,7 +2116,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!114 &685744778
 MonoBehaviour:
@@ -2438,8 +2438,8 @@ MonoBehaviour:
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 1.7934359
-  m_PointLightOuterRadius: 4.6512346
+  m_PointLightInnerRadius: 4.25
+  m_PointLightOuterRadius: 10.38
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -2497,7 +2497,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1010621455
 GameObject:
@@ -2511,7 +2511,7 @@ GameObject:
   - component: {fileID: 1010621458}
   - component: {fileID: 1010621457}
   - component: {fileID: 1010621459}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Floor Tiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84750,7 +84750,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1067794264}
   - component: {fileID: 1067794263}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84784,7 +84784,7 @@ Transform:
   - {fileID: 1384034552}
   - {fileID: 1010621456}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1085311738
 GameObject:
@@ -85386,7 +85386,7 @@ Transform:
   - {fileID: 292888908}
   - {fileID: 1353060397}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1220016023
 MonoBehaviour:
@@ -85914,7 +85914,7 @@ GameObject:
   - component: {fileID: 1384034553}
   - component: {fileID: 1384034555}
   - component: {fileID: 1384034556}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wall Tiles
   m_TagString: wall
   m_Icon: {fileID: 0}
@@ -85956,7 +85956,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -101385,7 +101385,7 @@ Transform:
   - {fileID: 2001957662}
   - {fileID: 1245616605}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1974308635
 GameObject:
@@ -101424,7 +101424,7 @@ RectTransform:
   - {fileID: 463158705}
   - {fileID: 103647584}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -33.136, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
