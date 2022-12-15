@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Opens the Pause Menu when 'Esc' is pressed, and resumes the game when resume is clicked.
+/// </summary>
 public class PauseMenuEvents : MonoBehaviour
 {
     public GameObject pauseMenu;

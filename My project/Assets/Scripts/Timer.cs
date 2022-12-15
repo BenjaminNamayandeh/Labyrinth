@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+/// <summary>
+/// Starts the stopwatch and stops it when the player reaches the end of the level (door)
+/// </summary>
 public class Timer : MonoBehaviour
 {
     [Header("Component")]
