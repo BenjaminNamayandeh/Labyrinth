@@ -32,12 +32,19 @@ public class PauseMenuEvents : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Pauses the game
+    /// </summary>
     public void PauseGame()
     {
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
     }
+
+    /// <summary>
+    /// Resumes the game
+    /// </summary>
     public void ResumeGame()
     {
         pauseMenu.SetActive(false);
