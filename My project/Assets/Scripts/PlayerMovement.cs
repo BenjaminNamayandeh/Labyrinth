@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Windows;
 using Input = UnityEngine.Input;
 
+/// <summary>
+/// Takes user input to control player movement, also changes the animation state, and flips it based on the pressed key
+/// </summary>
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb;

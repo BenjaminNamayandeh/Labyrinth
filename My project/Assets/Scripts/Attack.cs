@@ -4,10 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// It gives the user 3 attacks that moves the monster to a set position on the map.
+/// </summary>
 public class Attack : MonoBehaviour
 {
     private int attacks;
-
+    
+    /// <summary>
+    /// When the user presses 'E', the attack is commenced.
+    /// </summary>
+    /// <param name="collision"></param>
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (Input.GetKeyDown(KeyCode.E))

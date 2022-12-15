@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// It sets the target for the enemy, which is the player and then uses NavMesh to find the most efficient route to the player.
+/// </summary>
 public class aimovement : MonoBehaviour
 {
     [SerializeField] Transform target;
@@ -22,9 +25,13 @@ public class aimovement : MonoBehaviour
         agent.SetDestination(target.position);
     }
 
+    /// <summary>
+    /// When the player hits the wood piece, it adds to the wood count and increas the slider's value
+    /// </summary>
+    /// <param name="collision"></param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player") // If player hits wood, add wood count and increase wood bar value
+        if (collision.tag == "Player")
         {
             SceneManager.LoadScene("Main Menu");
         }

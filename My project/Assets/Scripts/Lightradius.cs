@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
+/// <summary>
+/// Changes the light radius based on the slider value, lets the user flash their torch (every 3 seconds) when they run out of wood.
+/// </summary>
 public class Lightradius : MonoBehaviour
 {
     [SerializeField] private PickUp pickup;

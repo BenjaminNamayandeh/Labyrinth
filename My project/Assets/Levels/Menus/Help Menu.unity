@@ -297,7 +297,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 350.42, y: -192}
+  m_AnchoredPosition: {x: 295.67, y: -191.75}
   m_SizeDelta: {x: 180.1549, y: 51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &533020599
@@ -452,18 +452,20 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'How to play Labyrinth:
+  m_text: 'How to Play Labyrinth:
 
 
-    Controls: W, A, S and D
+    Controls: W, A, S, D,  E and spacebar
 
-    To win you have
-    to get through the maze without the monster catching up to you.
+    Intructions:
+    To win you have to get through the maze without the monster catching up to you.
+    If the monster is close to you, pressing E will push it to the original position.
 
-    You will
-    have a ring of light around you that will slowly shrink overtime. To increase
-    the the light around you, you would need to collect woodbars around the maze.
-    Good luck getting out...'
+    You
+    will also have a ring of light around you that will slowly shrink overtime. To
+    increase  the ring light around you, you would need to collect the woodbars placed
+    around the maze or press the spacebar to give you a flash of light. Good luck
+    getting out...'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 8b29aaa3eec7468097ff07adfcf29ac9, type: 2}
@@ -490,8 +492,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
