@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Windows;
+using Input = UnityEngine.Input;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator; 
 
     public float speed;
+    bool flipped = false;
 
     // Start is called before the first frame update
     void Start()
@@ -22,9 +25,23 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         moveDirection = (transform.up * Input.GetAxisRaw("Vertical") + transform.right * Input.GetAxisRaw("Horizontal")).normalized;
+
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.W))
         {
             animator.SetFloat("Speed", 1);
+
+            print(flipped);
+
+            if (Input.GetKeyDown(KeyCode.A) && flipped)
+            {
+                transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+                flipped = false;
+            }
+            else if (Input.GetKeyDown(KeyCode.D) && !flipped)
+            {
+                transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+                flipped = true;
+            }
         }
         else
         {
