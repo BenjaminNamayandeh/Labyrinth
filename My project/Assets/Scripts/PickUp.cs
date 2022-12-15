@@ -52,6 +52,17 @@ public class PickUp : MonoBehaviour
             }
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
+        if (collision.tag == "GEDoor")
+        {
+            var bestTime = PlayerPrefs.GetFloat(highScoreSaveKey);
+            var currentTime = timer.currentTime;
+            if (currentTime <= bestTime || bestTime == 0f)
+            {
+                bestTime = currentTime;
+                PlayerPrefs.SetFloat(highScoreSaveKey, bestTime);
+            }
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 
     /// <summary>

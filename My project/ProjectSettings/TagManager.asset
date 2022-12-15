@@ -9,6 +9,7 @@ TagManager:
   - Door
   - Attack
   - Enemy
+  - GEDoor
   layers:
   - Default
   - TransparentFX
