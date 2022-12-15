@@ -206,13 +206,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 11500000, guid: 11b8c7f4ad7e84f19b05aa9f8021cc3c, type: 3}
+        m_TargetAssemblyTypeName: PlayButtonScript, Assembly-CSharp
         m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -961,10 +961,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2045187438}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dc56b9eaa23f463d9ac8e77b9ba98b4, type: 3}
+  m_Script: {fileID: 11500000, guid: 11b8c7f4ad7e84f19b05aa9f8021cc3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playButtonLevel1: Help Menu
 --- !u!4 &2045187440
 Transform:
   m_ObjectHideFlags: 0
