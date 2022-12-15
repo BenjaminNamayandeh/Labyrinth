@@ -7242,6 +7242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1236983852}
+  rb: {fileID: 1073439055}
 --- !u!195 &1073439059
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7710,7 +7711,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1178647114
 Transform:
   m_ObjectHideFlags: 0

@@ -33,8 +33,6 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetFloat("Speed", 1);
 
-            print(flipped);
-
             if (Input.GetKeyDown(KeyCode.A) && flipped)
             {
                 transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);

@@ -10,7 +10,13 @@ using UnityEngine.SceneManagement;
 public class aimovement : MonoBehaviour
 {
     [SerializeField] Transform target;
+
     NavMeshAgent agent;
+
+    private Vector3 positionLastFrame;
+    public Vector3 vel;
+    bool flipped = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +28,24 @@ public class aimovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        var displacement = transform.position - positionLastFrame;
+
+        vel = displacement / Time.deltaTime;
+        
         agent.SetDestination(target.position);
+
+        positionLastFrame = transform.position;
+
+        if (vel.x < 0f && flipped)
+        {
+            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+            flipped = false;
+        }
+        if (vel.x > 0f && !flipped)
+        {
+            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+            flipped = true;
+        }
     }
 
     /// <summary>
