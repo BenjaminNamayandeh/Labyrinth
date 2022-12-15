@@ -346,7 +346,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1163502645}
         m_TargetAssemblyTypeName: PauseMenuBackButtonScript, Assembly-CSharp
-        m_MethodName: BackButton
+        m_MethodName: PauseButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
