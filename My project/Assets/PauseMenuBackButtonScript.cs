@@ -7,7 +7,7 @@ public class PauseMenuBackButtonScript : MonoBehaviour
 {
    [SerializeField] private string backToPauseMenuButton = "Pause Menu";
 
-   public void PauseButton()
+   public void BackButton()
    {
     SceneManager.LoadScene(backToPauseMenuButton);
    }
