@@ -422,34 +422,14 @@ GameObject:
   - component: {fileID: 137181534}
   - component: {fileID: 137181533}
   - component: {fileID: 137181532}
-  - component: {fileID: 137181531}
+  - component: {fileID: 137181538}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Enemy2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &137181531
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 137181530}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7998b35777ab9384697d3075a36c47ff, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &137181532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -473,7 +453,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 137181530}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.91
+  m_Radius: 0.37
   m_Speed: 4.34
   m_Acceleration: 8
   avoidancePriority: 50
@@ -482,8 +462,8 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 3.46
-  m_BaseOffset: 1.87
+  m_Height: 1.43
+  m_BaseOffset: 0.28
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!70 &137181534
@@ -499,8 +479,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.15, y: 0.03}
-  m_Size: {x: 2.42, y: 3.25}
+  m_Offset: {x: 0.06, y: 0.35}
+  m_Size: {x: 1.08, y: 1.32}
   m_Direction: 0
 --- !u!50 &137181535
 Rigidbody2D:
@@ -583,13 +563,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 137181530}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.1, y: 45.3, z: 0}
-  m_LocalScale: {x: 0.66611373, y: 0.6087759, z: 1}
+  m_LocalPosition: {x: 61.7, y: 19, z: 0}
+  m_LocalScale: {x: 1.66, y: 1.53, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &137181538
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137181530}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 12b0603828682c341acdc0bae82c7186, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &183109611
 GameObject:
   m_ObjectHideFlags: 0
@@ -2333,7 +2328,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &832480325
 Transform:
   m_ObjectHideFlags: 0
@@ -2417,7 +2412,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 4.25
-  m_PointLightOuterRadius: 10.38
+  m_PointLightOuterRadius: 11.71
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -85044,7 +85039,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1220016021}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.9, y: 54.7, z: 0}
+  m_LocalPosition: {x: 22.34, y: 54.7, z: 0}
   m_LocalScale: {x: -2.2856789, y: 2.05, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -100783,7 +100778,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1435306918
 Transform:
   m_ObjectHideFlags: 0
@@ -100884,7 +100879,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 5.5
-  m_PointLightOuterRadius: 7.6
+  m_PointLightOuterRadius: 8.82
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
