@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Menus/Main Menu.unity
     guid: eeb04e9695d2c48e9b2d71ac1efbffd6
+  - enabled: 1
+    path: Assets/Levels/Menus/Help Main Menu.unity
+    guid: 7164a8ecbc62e44428395f4cac8701b4
+  - enabled: 1
+    path: Assets/Levels/Menus/Help Pause Menu.unity
+    guid: 939b1430abf284fddac295dd5a26f429
   m_configObjects: {}
